@@ -40,7 +40,11 @@ pip install -r requirements.txt
    - For DuckDuckGo: No API key needed.
    - For Current Weather (if you add it): Set `OPENWEATHER_API_KEY`.
    - For OCI CLI tool: Ensure `oci` CLI is installed and configured (`oci setup config`).
-   - For Gemini: Set up your Google API key if required by your environment.
+   - For Gemini (GoogleGenAI): **Set your Google API key:**
+     ```bash
+     export GOOGLE_API_KEY=your_actual_api_key
+     ```
+     You can get your API key from [Google AI Console](https://makersuite.google.com/app/apikey).
 
 ## Features
 
@@ -74,3 +78,4 @@ pytest
 todo:
 Add WorkflowAgents
 Add support for OCI Cost estimator
+Add Delete Protection
